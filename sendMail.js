@@ -10,10 +10,16 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
     from: 'ravina18@navgurukul.org',
-    to: 'komal18@navgurukul.org',
+    to: 'ravinasingh697@gmail.com',
     subject: 'using Node js, sending this mail:)',
     text: 'want you to check once weather concept is clear or not!'
 };
+
+function sleep() {
+    console.log("I am taking time for execute:)");
+}
+
+setTimeout(sleep, 30000);
 
 transporter.sendMail(mailOptions, function(error, info){
     if (error){
