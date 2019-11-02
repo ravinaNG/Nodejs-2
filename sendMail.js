@@ -15,16 +15,20 @@ var mailOptions = {
     text: 'want you to check once weather concept is clear or not!'
 };
 
-function sleep() {
+/*function sleep() {
     console.log("I am taking time for execute:)");
 }
 
-setTimeout(sleep, 30000);
+setTimeout(sleep, 30000);*/
 
-transporter.sendMail(mailOptions, function(error, info){
-    if (error){
-        console.log(error);
-    }else {
-        console.log('Email sent: ' + info.response);
-    }
-});
+setTimeout(function(){
+    transporter.sendMail(mailOptions, function(error, info){
+        if (error){
+            console.log(error);
+        }else {
+            console.log('Email sent: ' + info.response);
+        }
+    })
+}, 50000);
+
+console.log("Sending....")
