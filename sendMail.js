@@ -4,7 +4,7 @@ var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
         user: 'ravina18@navgurukul.org',
-        pass: '*************'
+        pass: 'navgurukul123'
     }
 });
 
@@ -15,11 +15,7 @@ var mailOptions = {
     text: 'want you to check once weather concept is clear or not!'
 };
 
-/*function sleep() {
-    console.log("I am taking time for execute:)");
-}
 
-setTimeout(sleep, 30000);*/
 
 setTimeout(function(){
     transporter.sendMail(mailOptions, function(error, info){
@@ -29,6 +25,6 @@ setTimeout(function(){
             console.log('Email sent: ' + info.response);
         }
     })
-}, 50000);
+}, 5);
 
-console.log("Sending....")
+console.log("Sending...")
