@@ -1,7 +1,7 @@
 var promise = function(input){
     return new Promise(function(resolve, reject){
     if(input === "Ravina"){
-        resolve("Hello Kutti !");
+        resolve("Hello");
     }
     else{
         reject("Some error");
@@ -16,7 +16,7 @@ promise("Ravina")
     console.log("Hii");
 })
 .then(function(message){
-    console.log("I am Ravina;)");
+    console.log("bye bye ;)");
 })
 .catch(function(err){
     console.log(err);
