@@ -11,4 +11,4 @@ const confirmationCallBack = () => {
     console.log('Server is active....');
 }
 
-server.listen(9000, confirmationCallBack);
+server.listen(80, confirmationCallBack);
