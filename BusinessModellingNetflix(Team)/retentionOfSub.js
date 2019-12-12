@@ -1,5 +1,3 @@
-// const json = require('JSON');
-
 function retentionListOfSubs(){
     const salesPerson = 1;
     const trailPerson = 20;
@@ -28,5 +26,6 @@ function retentionListOfSubs(){
 }
 
 const listOfRetentions = retentionListOfSubs();
-// const jsonData = JSON.parse(listOfRetentions);
-console.log(JSON.stringify(listOfRetentions));
+// console.log(typeof(listOfRetentions));
+// console.log(JSON.stringify(listOfRetentions));
+module.exports.listOfRetentions = listOfRetentions;
