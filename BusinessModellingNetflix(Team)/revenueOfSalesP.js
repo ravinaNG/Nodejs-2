@@ -5,21 +5,19 @@ const revenue = 40;
 const year = 5;
 const inflationRate = 6;
 
-// console.log(retentions['listOfRetentions']);
-
 let rowM = 0;
 let columnM = 0;
 let dicOfRevenue = {};
 
-for(rowM; rowM<60; rowM++){
+for(columnM; columnM<60; columnM++){
     let numberOfSubscriber = 0;
     let revenueOfMoth = 0;
     let month = 'month';
-    columnM = rowM;
+    rowM = columnM;
     let count = 1;
-    for(columnM; columnM >= 0; columnM --){
+    for(rowM; rowM >= 0; rowM --){
         month = "month" + count;
-        numberOfSubscriber = numberOfSubscriber + retentions['listOfRetentions'][month][columnM];
+        numberOfSubscriber = numberOfSubscriber + retentions['listOfRetentions'][month][rowM];
         count = count + 1;
     }
     revenueOfMoth = numberOfSubscriber*amtPerSubscription*revenue/100;
