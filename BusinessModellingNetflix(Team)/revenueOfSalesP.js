@@ -1,5 +1,6 @@
 let retentions = require('./retentionOfSub')
 
+console.log(retentions);
 const amtPerSubscription = 650;
 const revenue = 40;
 const year = 5;
@@ -24,4 +25,4 @@ for(columnM; columnM<60; columnM++){
     dicOfRevenue[month] = revenueOfMoth;
 }
 
-console.log(dicOfRevenue);
+// console.log(dicOfRevenue);
